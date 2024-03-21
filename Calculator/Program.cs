@@ -1,5 +1,3 @@
-﻿using System.Threading.Channels;
-
 Console.WriteLine("Hello!");
 
 var firstInputMsg = "Input the first number: ";
