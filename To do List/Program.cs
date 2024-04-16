@@ -11,27 +11,48 @@ var addTodo = "Add a TODO.";
 var removeTodo = "Remove a TODO.";
 var exitStage = "Exit.";
 
-if ((userChoice == "S")||(userChoice == "s"))
-    {
-        MessageSelectedChoice(seeAll);
-    }
-else if ((userChoice == "A")||(userChoice == "a"))
-    {
+switch(userChoice)
+{
+    case "S":
+        MessageSelectedChoice(seeALl);
+        break;
+    case "A":
         MessageSelectedChoice(addTodo);
-    }
-else if ((userChoice == "R")||(userChoice == "r"))
-    {
+        break;
+    case "R":
         MessageSelectedChoice(removeTodo);
-    }
-else if ((userChoice == "E")||(userChoice == "e"))
-    {
+        break;
+    case "E":
         MessageSelectedChoice(exitStage);
-        Console.ReadKey();
-    }
-else
-    {
-        Console.WriteLine("Error");
-    }
+        break;
+    default:
+        Console.WriteLine("Invalid Choice");
+        break;
+}
+
+//if ((userChoice == "S")||(userChoice == "s"))
+//    {
+//        MessageSelectedChoice(seeAll);
+//    }
+//else if ((userChoice == "A")||(userChoice == "a"))
+//    {
+//        MessageSelectedChoice(addTodo);
+//    }
+//else if ((userChoice == "R")||(userChoice == "r"))
+//    {
+//        MessageSelectedChoice(removeTodo);
+//    }
+//else if ((userChoice == "E")||(userChoice == "e"))
+//    {
+//        MessageSelectedChoice(exitStage);
+//        Console.ReadKey();
+//    }
+//else
+//    {
+//        Console.WriteLine("Error");
+//    }
+
+
 
 void MessageSelectedChoice (string selectedChoice = "Selected Choice: ")
 {
